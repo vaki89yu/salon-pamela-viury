@@ -1,0 +1,40 @@
+# Dependencias
+/node_modules
+/.pnp
+.pnp.*
+.yarn/*
+
+# Compilación de Next.js
+/.next/
+/out/
+/build
+next-env.d.ts
+
+# Variables de entorno (contienen contraseñas: nunca se suben)
+.env
+.env.local
+.env.*.local
+.env.production
+
+# Capturas y PDFs generados por las pruebas
+/artifacts/
+/test-results/
+/playwright-report/
+
+# Registros y archivos temporales
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.DS_Store
+*.pem
+/tmp/
+
+# Editores
+.vscode/*
+!.vscode/extensions.json
+.idea/
+
+# Vercel y TypeScript
+.vercel
+*.tsbuildinfo

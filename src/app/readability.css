@@ -1,0 +1,286 @@
+/* The final editorial pass: warmth and clarity, on every screen. */
+:root {
+  --copy: #7c6e60;
+  --detail: #806d5a;
+}
+
+.button-primary { background: #9b6149; border-color: #9b6149; }
+.button-primary:hover:not(:disabled) { background: #87513c; }
+.desktop-nav > a { font-size: 12px; color: #766655; }
+.my-appointment { font-size: 11px; color: var(--copy); }
+.header-book { font-size: 11px; }
+.hero-eyebrow { font-size: 9px; color: #82644d; }
+.hero-description { font-size: 14px; color: var(--copy); }
+.hero-buttons > .button { font-size: 11px; }
+.hero-services-link { font-size: 12px; color: #705b47; }
+.hero-reassurance p { font-size: 10px; color: var(--copy); }
+.hero-note p { font-size: 10px; color: var(--copy); }
+.hero-note strong { color: #71523b; }
+.benefits-inner span { font-size: 11px; color: var(--copy); }
+.benefits-inner strong { color: #685442; }
+.section-heading > div > p:last-child:not(.eyebrow) { font-size: 14px; color: var(--copy); }
+.download-menu { font-size: 11px; color: var(--detail); }
+.service-tabs > button { font-size: 11px; color: var(--copy); }
+.service-photo-tag { font-size: 8px; color: #6a4e37; }
+.service-card > p { font-size: 13px; line-height: 1.85; color: var(--copy); min-height: 73px; }
+.service-card-title > span { font-size: 10px; color: var(--detail); }
+.service-card-title > span > strong { font-size: 13px; color: #886146; }
+.service-card-bottom > span { font-size: 10px; color: var(--detail); }
+.service-card-bottom > button { font-size: 11px; color: #956047; }
+.services-foot > p { font-size: 12px; color: var(--copy); }
+.services-foot > .text-button { font-size: 11px; }
+.about-copy > p:not(.eyebrow) { font-size: 14px; color: var(--copy); }
+.about-values strong { font-size: 12px; color: #705a45; }
+.about-values small { font-size: 11px; color: var(--copy); }
+.about-copy > .text-button { font-size: 11px; color: #956047; }
+.instagram-link { font-size: 11px; color: var(--detail); }
+.inspiration-note { font-size: 10px; color: var(--detail); }
+.review-person strong { font-size: 11px; }
+.review-person small { font-size: 10px; color: var(--detail); }
+.review-disclaimer { font-size: 9px; color: var(--detail); }
+.booking-banner p:not(.eyebrow) { font-size: 14px; color: #795a43; }
+.booking-banner-action > span { font-size: 10px; color: #795a43; }
+.location-copy > p:not(.eyebrow) { font-size: 14px; color: var(--copy); }
+.contact-detail strong { font-size: 12px; color: #775b43; }
+.contact-detail span { font-size: 11px; color: var(--copy); }
+.contact-detail a { font-size: 10px; color: #936040; }
+.location-copy > .button { font-size: 11px; color: #775a40; }
+.map-card span:not(.map-brand) { font-size: 10px; color: var(--detail); }
+.footer-brand > span { font-size: 11px; }
+.site-footer h3 { font-size: 11px; }
+.footer-links > a, .footer-links > button, .footer-contact > p { font-size: 11px; }
+.footer-contact-button { font-size: 11px; }
+.footer-bottom, .footer-bottom button { font-size: 9px; }
+.floating-help > span:first-child { font-size: 11px; color: #765c43; }
+
+/* Clear, comfortable forms and receipts. */
+.booking-heading > p { font-size: 13px; color: var(--copy); }
+.booking-steps > li { font-size: 11px; }
+.booking-steps > li:not(.current):not(.complete) { color: var(--detail); }
+.service-option strong { font-size: 12px; color: #725339; }
+.service-option small { font-size: 10px; color: var(--detail); }
+.booking-summary > p:not(.mini-label) { font-size: 11px; color: var(--detail); }
+.booking-summary > .mini-label { color: var(--detail); }
+.booking-summary > .summary-trust { font-size: 10px !important; color: var(--copy) !important; }
+.summary-price small { font-size: 10px; color: var(--detail); }
+.field { font-size: 12px; color: #7a5a40; }
+.field input, .field select, .field textarea { font-size: 13px; color: #71553e; min-height: 45px; }
+.field input::placeholder, .field textarea::placeholder { color: #8f7963; }
+.field .optional { font-size: 10px; color: var(--detail); }
+.consent { font-size: 11px; color: var(--copy); }
+.time-label { font-size: 12px; color: #7a5a3e; }
+.time-label > span { font-size: 9px; color: var(--detail); }
+.time-slots > button { font-size: 13px; color: #856143; }
+.time-slots > button.selected { color: white; background: #9b6149; border-color: #9b6149; }
+.availability-state { font-size: 12px; color: var(--copy); }
+.form-note { font-size: 10px; color: var(--detail); }
+.form-error { font-size: 12px; color: #92452f; }
+.booking-footer > .button { font-size: 12px; }
+.booking-footer > .text-button { font-size: 11px; color: #956047; }
+.receipt-intro { font-size: 13px; color: var(--copy); }
+.folio small { font-size: 9px; color: #795133; }
+.receipt-details small { font-size: 10px; color: var(--detail); }
+.receipt-details strong { font-size: 12px; color: #79563a; }
+.receipt-price > span { font-size: 11px; color: var(--detail); }
+.receipt-download { font-size: 12px; }
+.cancel-link { font-size: 11px; color: var(--detail); }
+.cancel-box > strong { font-size: 12px; color: #825d40; }
+.cancel-box > p { font-size: 11px; color: var(--detail); }
+.cancel-box .button { font-size: 11px; }
+.lookup-content > p { font-size: 13px; color: var(--copy); }
+.lookup-content > form > .button { font-size: 12px; }
+.lookup-content > .form-note { font-size: 10px; color: var(--detail); }
+.lookup-again { font-size: 11px; }
+.contact-modal-content > p, .message-success > p { font-size: 13px; color: var(--copy); }
+.contact-form > .button { font-size: 12px; }
+.faq-list summary { font-size: 13px; color: #79583b; }
+.faq-list details > p { font-size: 12px; color: var(--copy); }
+.help-actions > .button { font-size: 12px; }
+.help-hours { font-size: 10px !important; color: var(--detail) !important; }
+.lightbox-caption small { font-size: 10px; color: var(--detail); }
+.lightbox-caption > .button { font-size: 11px; }
+.info-content > p { font-size: 13px; color: var(--copy); }
+.philosophy-values strong { font-size: 12px; }
+.philosophy-values small { font-size: 11px; color: var(--detail); }
+.info-content > .button { font-size: 12px; }
+.legal-copy > h3 { font-size: 13px; color: #79573b; }
+.legal-copy > p { font-size: 12px; color: var(--copy); }
+.photo-credits a { font-size: 12px; color: #825c3d; }
+
+@media (max-width: 1200px) {
+  .hero-eyebrow { font-size: 8px; letter-spacing: 1.5px; }
+  .hero-description { font-size: 13px; }
+  .hero-buttons > .button { font-size: 10px; }
+  .hero-services-link { font-size: 11px; }
+  .hero-reassurance p { font-size: 9px; }
+  .benefits-inner span { font-size: 10px; }
+  .about-copy > p:not(.eyebrow) { font-size: 13px; }
+  .about-values small { font-size: 10px; }
+  .service-card > p { font-size: 12px; min-height: 68px; }
+  .service-card-bottom > button { font-size: 10px; }
+  .service-card-bottom > span { font-size: 9px; }
+  .footer-main { gap: 30px; }
+  .footer-links > a, .footer-links > button, .footer-contact > p { font-size: 10px; }
+  .footer-contact-button { font-size: 10px; }
+}
+
+@media (max-width: 1020px) {
+  .hero-description { font-size: 12px; }
+  .hero-reassurance p { font-size: 8px; }
+  .hero-buttons > .button { font-size: 9px; }
+  .hero-services-link { font-size: 10px; }
+  .hero-eyebrow { font-size: 7px; }
+  .benefits-inner span { font-size: 9px; }
+  .service-card > p { font-size: 12px; min-height: 90px; }
+  .service-card-title > span { font-size: 9px; }
+  .service-card-title > span > strong { font-size: 12px; }
+  .about-copy > p:not(.eyebrow) { font-size: 12px; }
+  .about-values strong { font-size: 11px; }
+  .about-values small { font-size: 10px; }
+  .services-foot > p { font-size: 10px; }
+  .location-copy > .button { font-size: 10px; }
+  .map-card span:not(.map-brand) { font-size: 8px; }
+  .footer-main { gap: 25px; }
+  .footer-links > a, .footer-links > button, .footer-contact > p { font-size: 9px; }
+  .footer-contact-button { font-size: 9px; }
+  .footer-bottom, .footer-bottom button { font-size: 8px; }
+}
+
+@media (max-width: 850px) {
+  .hero-description { font-size: 12px; }
+  .hero-eyebrow { font-size: 6px; }
+  .hero-buttons > .button { font-size: 10px; }
+  .hero-services-link { font-size: 10px; }
+  .hero-reassurance p { font-size: 7px; }
+  .hero-note p { font-size: 9px; }
+  .benefits-inner span { font-size: 8px; }
+  .service-card > p { font-size: 11px; min-height: 99px; }
+  .service-card-bottom > button { font-size: 10px; }
+  .service-tabs > button { font-size: 10px; padding-left: 14px; padding-right: 14px; }
+  .about-copy > p:not(.eyebrow) { font-size: 11px; }
+  .about-values small { font-size: 9px; }
+  .about-values strong { font-size: 10px; }
+  .services-foot > p { font-size: 9px; }
+  .booking-banner p:not(.eyebrow) { font-size: 12px; }
+  .booking-banner-action > span { font-size: 8px; }
+  .location-copy > p:not(.eyebrow) { font-size: 12px; }
+  .contact-detail strong { font-size: 11px; }
+  .contact-detail span { font-size: 10px; }
+  .contact-detail a { font-size: 9px; }
+  .location-copy > .button { font-size: 9px; }
+  .footer-contact > p { font-size: 10px; }
+  .footer-contact-button { font-size: 10px; }
+  .service-option strong { font-size: 11px; }
+  .service-option small { font-size: 9px; }
+  .field { font-size: 11px; }
+  .field input, .field select, .field textarea { font-size: 12px; }
+  .booking-summary > p:not(.mini-label) { font-size: 10px; }
+  .booking-summary > .summary-trust { font-size: 9px !important; }
+  .time-label { font-size: 11px; }
+  .time-label > span { font-size: 8px; }
+}
+
+@media (max-width: 640px) {
+  .header-book { font-size: 9px; }
+  .hero-eyebrow { font-size: 7px; }
+  .hero-description { font-size: 13px; max-width: 350px; }
+  .hero-buttons { gap: 20px; }
+  .hero-buttons > .button { font-size: 10px; padding: 0 15px; min-height: 46px; }
+  .hero-services-link { font-size: 10px; }
+  .hero-reassurance p { font-size: 9px; }
+  .hero-note p { font-size: 10px; }
+  .benefits-inner span { font-size: 9px; }
+  .section-heading > div > p:last-child:not(.eyebrow) { font-size: 13px; }
+  .service-tabs > button { font-size: 11px; padding: 9px 16px; }
+  .download-menu { font-size: 11px; }
+  .service-photo-tag { font-size: 8px; }
+  .service-card-title > span { font-size: 10px; }
+  .service-card-title > span > strong { font-size: 13px; }
+  .service-card > p { font-size: 13px; min-height: 0; }
+  .service-card-bottom > span { font-size: 10px; }
+  .service-card-bottom > button { font-size: 11px; }
+  .services-foot > p { font-size: 11px; }
+  .services-foot > .text-button { font-size: 11px; }
+  .about-copy > p:not(.eyebrow) { font-size: 13px; line-height: 1.9; }
+  .about-values strong { font-size: 12px; }
+  .about-values small { font-size: 11px; }
+  .about-copy > .text-button { font-size: 11px; }
+  .instagram-link { font-size: 11px; }
+  .inspiration-note { font-size: 9px; }
+  .review-person strong { font-size: 11px; }
+  .review-person small { font-size: 10px; }
+  .review-disclaimer { font-size: 8px; }
+  .booking-banner p:not(.eyebrow) { font-size: 13px; max-width: 310px; }
+  .booking-banner-action > span { font-size: 9px; }
+  .booking-banner-action > .button { font-size: 12px; }
+  .location-copy > p:not(.eyebrow) { font-size: 13px; }
+  .contact-detail strong { font-size: 12px; }
+  .contact-detail span { font-size: 11px; }
+  .contact-detail a { font-size: 10px; }
+  .location-copy > .button { font-size: 11px; }
+  .map-card span:not(.map-brand) { font-size: 9px; }
+  .footer-brand > span { font-size: 11px; }
+  .footer-links > a, .footer-links > button, .footer-contact > p { font-size: 10px; }
+  .site-footer h3 { font-size: 11px; }
+  .footer-contact-button { font-size: 11px; }
+  .footer-bottom, .footer-bottom button { font-size: 8px; }
+  .booking-heading > p { font-size: 12px; }
+  .booking-steps > li { font-size: 10px; }
+  .booking-steps { gap: 21px; }
+  .service-option strong { font-size: 11px; }
+  .service-option small { font-size: 9px; }
+  .field { font-size: 12px; }
+  .field input, .field select, .field textarea { font-size: 13px; }
+  .field .optional { font-size: 9px; }
+  .consent { font-size: 10px; }
+  .time-label { font-size: 11px; }
+  .time-label > span { font-size: 8px; }
+  .time-slots > button { font-size: 12px; }
+  .form-note { font-size: 10px; }
+  .booking-footer > .button { font-size: 11px; padding: 0 16px; }
+  .booking-footer > .text-button { font-size: 10px; }
+  .receipt-intro { font-size: 12px; }
+  .receipt-details small { font-size: 9px; }
+  .receipt-details strong { font-size: 11px; }
+  .receipt-price > span { font-size: 10px; }
+  .receipt-download { font-size: 11px; }
+  .receipt > .form-note { font-size: 9px; }
+  .cancel-link { font-size: 10px; }
+  .cancel-box > strong { font-size: 11px; }
+  .cancel-box > p { font-size: 10px; }
+  .cancel-box .button { font-size: 10px; }
+  .lookup-content > p { font-size: 12px; }
+  .lookup-content > form > .button { font-size: 12px; }
+  .lookup-content > .form-note { font-size: 9px; }
+  .contact-modal-content > p, .message-success > p { font-size: 12px; }
+  .contact-form > .button { font-size: 12px; }
+  .help-actions > .button { font-size: 11px; }
+  .faq-list summary { font-size: 12px; }
+  .faq-list details > p { font-size: 11px; }
+  .help-hours { font-size: 9px !important; }
+  .info-content > p { font-size: 12px; }
+  .legal-copy > h3 { font-size: 12px; }
+  .legal-copy > p { font-size: 11px; }
+  .photo-credits a { font-size: 11px; }
+  .philosophy-values strong { font-size: 12px; }
+  .philosophy-values small { font-size: 11px; }
+  .info-content > .button { font-size: 12px; }
+  .lightbox-caption small { font-size: 9px; }
+  .lightbox-caption > .button { font-size: 12px; }
+}
+
+@media (max-width: 390px) {
+  .header-book { font-size: 8px; }
+  .hero-buttons { gap: 16px; }
+  .hero-buttons > .button { font-size: 9px; padding: 0 12px; }
+  .hero-services-link { font-size: 9px; }
+  .hero-description { font-size: 12px; }
+  .benefits-inner span { font-size: 8px; }
+  .booking-steps { gap: 14px; }
+  .booking-steps > li { font-size: 9px; }
+  .service-option strong { font-size: 10px; }
+  .service-option small { font-size: 8px; }
+  .time-label > span { font-size: 7px; }
+  .receipt-price > span { font-size: 9px; }
+  .receipt-price > strong { font-size: 22px; }
+}

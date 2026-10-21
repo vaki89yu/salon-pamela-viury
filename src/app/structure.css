@@ -1,0 +1,178 @@
+/* ===========================================================
+   Salón de Belleza Pamela Viury — identidad y nuevas secciones
+   =========================================================== */
+
+:root { --gold: #a9834f; --deep: #2f2a26; }
+
+/* --- Wordmark --- */
+.brand > svg { color: var(--gold); width: 42px; height: 42px; }
+.brand-type { align-items: flex-start; gap: 2px; }
+.brand-kicker { font-size: 7px; letter-spacing: 3.4px; color: #998575; line-height: 1; }
+.brand-name {
+  font-family: var(--font-editorial), Georgia, serif;
+  font-size: 27px; letter-spacing: .4px; line-height: 1.05; color: var(--deep); text-transform: none;
+}
+.brand-description { font-size: 6.5px; letter-spacing: 3px; color: #a08c7b; line-height: 1; padding-left: 1px; }
+.brand-light .brand-name { color: #f2e8d9; }
+.brand-light .brand-kicker { color: #c3b49f; }
+.brand-light .brand-description { color: #b3a692; }
+.footer-main .brand-name { font-size: 27px; }
+
+.announcement { background: #e9dac6; color: #6c5641; }
+.site-header { background: #fdfaf6f2; }
+.beauty-seal text { fill: #7a6248; letter-spacing: 1.2px; }
+
+/* --- Centered section headings --- */
+.section-heading.center { justify-content: center; text-align: center; }
+.section-heading.center > div { max-width: 640px; }
+.center-eyebrow { justify-content: center; }
+.center-eyebrow > span { width: 30px; }
+
+/* --- Packages --- */
+.packages-section { background: #f7f2ea; border-top: 1px solid #ece2d4; border-bottom: 1px solid #ece2d4; }
+.package-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px; align-items: stretch; }
+.package-card {
+  position: relative; display: flex; flex-direction: column; gap: 14px;
+  background: #fffdf9; border: 1px solid #e6dacb; border-radius: 4px; padding: 34px 28px 28px;
+}
+.package-card.featured { border-color: var(--gold); box-shadow: 0 14px 40px #7a5a2c12; background: #fffefb; }
+.package-flag {
+  position: absolute; top: -10px; left: 28px; background: var(--gold); color: #fffaf1;
+  font-size: 7px; letter-spacing: 1.6px; font-weight: 600; padding: 6px 11px; border-radius: 2px;
+}
+.package-subtitle { font-size: 8px; letter-spacing: 1.8px; font-weight: 600; color: var(--gold); text-transform: uppercase; }
+.package-card h3 { font-size: 32px; line-height: 1.05; letter-spacing: -.8px; color: var(--deep); margin-top: -6px; }
+.package-card > ul { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 11px; border-top: 1px solid #ece2d4; padding-top: 18px; }
+.package-card li { display: flex; align-items: flex-start; gap: 10px; font-size: 12px; color: #7d7063; line-height: 1.6; }
+.package-card li > svg { color: var(--gold); margin-top: 2px; }
+.package-price { margin-top: auto; border-top: 1px solid #ece2d4; padding-top: 18px; display: flex; flex-direction: column; gap: 6px; }
+.package-price strong { font-family: var(--font-editorial), Georgia, serif; font-size: 36px; font-weight: 400; color: #8a6336; line-height: 1; }
+.package-price span { font-size: 9px; color: #9c8a77; }
+.package-card > .button { width: 100%; font-size: 11px; min-height: 45px; }
+.package-note { text-align: center; font-size: 10px; color: #9c8a77; margin-top: 26px; line-height: 1.8; }
+
+/* --- Experience / process --- */
+.experience-section { background: #fffdf9; }
+.experience-grid { list-style: none; margin: 0 0 46px; padding: 0; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 26px; }
+.experience-grid > li { position: relative; padding-top: 26px; border-top: 1px solid #e6dacb; }
+.experience-step {
+  font-family: var(--font-editorial), Georgia, serif; font-size: 40px; line-height: 1;
+  color: #e0cdb2; display: block; margin-bottom: 12px;
+}
+.experience-grid h3 { font-size: 20px; letter-spacing: -.3px; color: var(--deep); margin-bottom: 10px; line-height: 1.2; }
+.experience-grid p { font-size: 12px; line-height: 1.9; color: #85786a; }
+.credentials { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 22px; background: #f7f2ea; border: 1px solid #ece2d4; border-radius: 4px; padding: 30px 28px; }
+.credentials > div { display: flex; flex-direction: column; gap: 9px; }
+.credential-icon { color: var(--gold); }
+.credentials strong { font-size: 12px; font-weight: 600; color: #6e6053; }
+.credentials small { font-size: 11px; color: #8d8073; line-height: 1.75; }
+
+/* --- Team --- */
+.team-section { background: #f7f2ea; }
+.team-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 24px; }
+.team-card { min-width: 0; }
+.team-photo { position: relative; height: 320px; border-radius: 3px; overflow: hidden; background: #e3d6c5; }
+.team-photo img { object-position: 50% 22%; transition: transform .65s cubic-bezier(.2, .65, .3, 1); }
+.team-card:hover .team-photo img { transform: scale(1.04); }
+.team-years {
+  position: absolute; left: 14px; bottom: 14px; background: #fffcf4ec; color: #7d6141;
+  font-size: 8px; letter-spacing: 1.2px; padding: 6px 9px; backdrop-filter: blur(4px);
+}
+.team-role { font-size: 8px; letter-spacing: 1.8px; font-weight: 600; color: var(--gold); text-transform: uppercase; margin-top: 18px; }
+.team-card h3 { font-size: 24px; letter-spacing: -.5px; color: var(--deep); margin: 8px 0 6px; line-height: 1.15; }
+.team-specialty { font-size: 11px; color: #9b8b79; border-bottom: 1px solid #e6dacb; padding-bottom: 13px; }
+.team-bio { font-size: 12px; line-height: 1.85; color: #85786a; margin-top: 13px; }
+
+/* --- Elegant accents --- */
+.button-primary { background: #8d6239; border-color: #8d6239; }
+.button-primary:hover:not(:disabled) { background: #77502d; }
+.booking-banner { background: #e7d5bd; }
+.booking-banner h2 { color: #4f3c28; }
+.booking-banner h2 em, .booking-banner .eyebrow { color: #8a6136; }
+.site-footer { background: #2f2a26; }
+.footer-bottom { border-top-color: #4a433c; }
+.footer-contact-button { border-color: #574e45; }
+.footer-contact-button:hover { background: #3b352f; }
+.floating-help-icon { background: #4a4139; }
+.hero { background: #f7f2ea; }
+.hero-photo { border-top-left-radius: 190px; }
+
+@media (max-width: 1200px) {
+  .brand-name { font-size: 25px; }
+  .brand > svg { width: 39px; height: 39px; }
+  .package-card h3 { font-size: 29px; }
+  .package-price strong { font-size: 33px; }
+  .team-photo { height: 285px; }
+  .team-card h3 { font-size: 22px; }
+  .experience-step { font-size: 36px; }
+}
+
+@media (max-width: 1020px) {
+  .brand-name { font-size: 23px; }
+  .brand-kicker { font-size: 6px; letter-spacing: 3px; }
+  .brand > svg { width: 35px; height: 35px; }
+  .package-grid { gap: 18px; }
+  .package-card { padding: 30px 22px 24px; }
+  .package-card h3 { font-size: 26px; }
+  .package-card li { font-size: 11px; }
+  .package-price strong { font-size: 30px; }
+  .experience-grid { gap: 20px; }
+  .experience-grid h3 { font-size: 18px; }
+  .experience-grid p { font-size: 11px; }
+  .credentials { gap: 18px; padding: 26px 22px; }
+  .credentials strong { font-size: 11px; }
+  .credentials small { font-size: 10px; }
+  .team-grid { gap: 18px; }
+  .team-photo { height: 245px; }
+  .team-card h3 { font-size: 20px; }
+  .team-bio { font-size: 11px; }
+  .team-specialty { font-size: 10px; }
+}
+
+@media (max-width: 850px) {
+  .package-grid { grid-template-columns: 1fr 1fr; }
+  .package-card:last-child { grid-column: 1 / -1; }
+  .experience-grid { grid-template-columns: 1fr 1fr; gap: 26px 22px; }
+  .credentials { grid-template-columns: 1fr 1fr; gap: 24px; }
+  .team-grid { grid-template-columns: 1fr 1fr; gap: 26px 20px; }
+  .team-photo { height: 300px; }
+}
+
+@media (max-width: 640px) {
+  .brand > svg { width: 34px; height: 34px; }
+  .brand-name { font-size: 22px; }
+  .brand-kicker { font-size: 5.5px; letter-spacing: 2.6px; }
+  .brand-description { font-size: 5.5px; letter-spacing: 2.4px; }
+  .footer-main .brand-name { font-size: 27px; }
+  .section-heading.center { text-align: left; }
+  .center-eyebrow { justify-content: flex-start; }
+  .center-eyebrow > span:last-child { display: none; }
+  .package-grid { grid-template-columns: 1fr; gap: 20px; }
+  .package-card { padding: 30px 24px 26px; }
+  .package-card h3 { font-size: 31px; }
+  .package-card li { font-size: 12px; }
+  .package-price strong { font-size: 34px; }
+  .package-card > .button { font-size: 12px; min-height: 46px; }
+  .package-note { font-size: 10px; text-align: left; }
+  .experience-grid { grid-template-columns: 1fr; gap: 0; margin-bottom: 36px; }
+  .experience-grid > li { padding: 22px 0; }
+  .experience-grid > li:last-child { border-bottom: 1px solid #e6dacb; }
+  .experience-step { font-size: 32px; margin-bottom: 8px; }
+  .experience-grid h3 { font-size: 20px; }
+  .experience-grid p { font-size: 12px; }
+  .credentials { grid-template-columns: 1fr; gap: 22px; padding: 26px 22px; }
+  .credentials strong { font-size: 12px; }
+  .credentials small { font-size: 11px; }
+  .team-grid { grid-template-columns: 1fr; gap: 34px; }
+  .team-photo { height: 390px; }
+  .team-card h3 { font-size: 26px; }
+  .team-specialty { font-size: 11px; }
+  .team-bio { font-size: 12px; }
+}
+
+@media (max-width: 390px) {
+  .brand-name { font-size: 20px; }
+  .brand > svg { width: 31px; height: 31px; }
+  .package-card h3 { font-size: 28px; }
+  .team-photo { height: 340px; }
+}
